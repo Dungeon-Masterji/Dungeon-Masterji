@@ -1,10 +1,9 @@
-- 👋 Hi, I’m @Dungeon-Masterji
+- 👋 Hi, I’m Aditya Raj
 - 👀 I’m interested in opensource projects
-- 🌱 I’m currently learning to setup a webesite with the help of firebase
+- 🌱 I’m currently learning JAVA and Javascript
 - 💞️ I’m looking to collaborate on my upcoming projects
-- 📫 How to reach me Linkedin/instagram
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: ...
+- ⚡ Fun fact: I am a fast learner😎
 
 <!---
 Dungeon-Masterji/Dungeon-Masterji is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
