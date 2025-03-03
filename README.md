@@ -1,4 +1,5 @@
-Resume<img width="467" alt="Resume" src="https://github.com/user-attachments/assets/2e571760-4fac-4efa-99b0-1b43675c3a13" />
+#My Resume
+https://drive.google.com/file/d/1lm2r5cvYKAG7qy-TZGfAS6HTUNZ8VX-t/view?usp=sharing
 -Hi, I’m Aditya Raj
 -⚡Fun fact: I am a fast learner😎
 
