@@ -2,7 +2,7 @@
 
 
 [My Resume
-]((https://drive.google.com/file/d/1wdX7VuoXR5DQYe5UEiKCHGtgGBfWuNSF/view?usp=sharing))
+](https://drive.google.com/file/d/1wdX7VuoXR5DQYe5UEiKCHGtgGBfWuNSF/view?usp=sharing)
 
 
 -Hi, I’m Aditya Raj
