@@ -6,7 +6,7 @@
 
 
 -Hi, I’m Aditya Raj
-
+- Excited to contribute to Kubernetes, LFX, and AsyncAPI open-source initiatives and grow within the community
 -Fun fact: I am a fast learner😎
 
 <!---
