@@ -7,7 +7,7 @@
 
 -Hi, I’m Aditya Raj
 
--⚡Fun fact: I am a fast learner😎
+-Fun fact: I am a fast learner😎
 
 <!---
 Dungeon-Masterji/Dungeon-Masterji is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
