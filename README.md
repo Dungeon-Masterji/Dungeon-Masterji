@@ -5,10 +5,10 @@
 ](https://drive.google.com/file/d/1wdX7VuoXR5DQYe5UEiKCHGtgGBfWuNSF/view?usp=sharing)
 
 
--Hi, I’m Aditya Raj
+- Hi, I’m Aditya Raj
 - Excited to contribute to Kubernetes, LFX, and AsyncAPI open-source initiatives and grow within the community
   
--Fun fact: I am a fast learner😎
+- Fun fact: I am a fast learner😎
 
 <!---
 Dungeon-Masterji/Dungeon-Masterji is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
