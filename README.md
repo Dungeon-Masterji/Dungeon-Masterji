@@ -6,7 +6,7 @@
 
 
 - Hi, I’m Aditya Raj
-- Excited to contribute to Kubernetes(LFX), and Layer5 open-source initiatives and grow within the community
+- Excited to contribute to backstage,dapr and Layer5 open-source initiatives and grow within the community
   
 - Fun fact: I am a fast learner😎
 
