@@ -107,9 +107,9 @@ I build LLM agents and API-backed tools, then test them against real evaluation 
 ## Currently
 
 Learning to connect assistants to external systems through tool calling, REST APIs and webhooks, and finishing the API and UI for the heart-disease project.
-
-<br>
 ![me](https://github.com/user-attachments/assets/76a365a4-ad67-449d-b7fc-74f842a55af9)
+<br>
+
 
 ## Contact
 
