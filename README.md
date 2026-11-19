@@ -157,7 +157,7 @@ I build **machine-learning systems for healthcare** and test them like a clinici
 <table>
   <tr>
     <td width="22%" valign="top"><sub>Feb – Apr 2025</sub></td>
-    <td valign="top">🌐 <b>LFX Mentorship, Meshery / Layer5 (CNCF)</b><br>15+ merged pull requests to a cloud-native tool used by 10,000+ developers: bug fixes, UI documentation and CI/CD improvements.</td>
+    <td valign="top">🌐 <b>Opensource Contributor, Meshery / Layer5 (CNCF)</b><br>3+ merged pull requests to a cloud-native tool used by 10,000+ developers: bug fixes, UI documentation and CI/CD improvements.</td>
   </tr>
   <tr>
     <td valign="top"><sub>Aug – Nov 2025</sub></td>
