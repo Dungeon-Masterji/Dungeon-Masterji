@@ -27,7 +27,8 @@
 
 I build **machine-learning systems for healthcare** and test them like a clinician would want them tested: sensitivity-first thresholds, honest baselines, model cards, and a clear line between *decision support* and *diagnosis*.
 
-- 🫀 Built **HeartGuard AI**, a heart-disease risk model tuned to catch **9 in 10 positive cases** (sensitivity 0.902, ROC AUC 0.908), served through FastAPI and a clinician-facing React UI.
+- 🫀 Built **HeartGuard AI**, an educational heart-disease risk flag (cross-validated sensitivity 0.855, ROC AUC 0.908) **tested on three outside hospitals**, served through FastAPI and a React UI. It includes a second model for patients without scan results.
+- 🔎 Found and fixed an **inverted target label** in HeartGuard AI by matching all 303 rows to the original UCI records, then retrained and replaced the results I had published.
 - 🌡️ Built **Sentinel Grid**, a population-health early-warning system that fuses clinical, environmental and occupational signals, explains every alert with **SHAP + an LLM narrative in English and Arabic**, and routes it to the responsible public-health role.
 - 🔐 I treat patient data carefully: aggregate-only signals, **small-cell suppression (< 5 records)**, synthetic populations (Synthea) for development, and no personal data in LLM prompts.
 - 📏 I report what a model *can't* do as clearly as what it can. My backtests are compared against chance, not just shown as headline numbers.
@@ -36,10 +37,10 @@ I build **machine-learning systems for healthcare** and test them like a clinici
 
 <table align="center" width="100%">
   <tr align="center">
-    <td width="25%">🫀<h2>0.902</h2><sub>sensitivity on<br>heart-disease risk</sub></td>
-    <td width="25%">📈<h2>0.908</h2><sub>ROC AUC,<br>nested cross-validation</sub></td>
+    <td width="25%">🏥<h2>3</h2><sub>outside hospitals tested<br>(HeartGuard AI)</sub></td>
+    <td width="25%">📈<h2>0.908</h2><sub>ROC AUC, nested CV<br>(HeartGuard AI)</sub></td>
     <td width="25%">🚨<h2>4.7×</h2><sub>alert precision vs chance<br>(Sentinel Grid, warning tier)</sub></td>
-    <td width="25%">🌍<h2>15+</h2><sub>merged open-source<br>PRs (CNCF)</sub></td>
+    <td width="25%">🌍<h2>3</h2><sub>merged open-source<br>PRs (Layer5)</sub></td>
   </tr>
 </table>
 
@@ -58,12 +59,21 @@ I build **machine-learning systems for healthcare** and test them like a clinici
       <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
     </td>
     <td valign="top">
-      A multi-model diagnosis-support tool on the UCI Heart Disease dataset that helps clinicians prioritise patients with elevated risk for specialist review.<br><br>
-      ✅ Hard and soft voting ensembles vs a Logistic Regression baseline<br>
+      An educational risk-flag prototype on the UCI Heart Disease dataset, exploring how a model could help prioritise patients for further review. Not a medical device.<br><br>
+      ✅ Soft-voting ensemble (LR, RF, GB, SVM) vs a Logistic Regression baseline<br>
       ✅ Leakage-safe preprocessing, nested stratified 5-fold CV<br>
-      ✅ Threshold picked to <b>keep sensitivity ≥ 0.90</b>, then maximise specificity<br>
-      ✅ Model card, data dictionary, ADRs, versioned model artifact<br><br>
-      <code>Sensitivity 0.902</code> <code>Specificity 0.797</code> <code>Precision 0.841</code> <code>F1 0.871</code> <code>AUC 0.908</code><br><br>
+      ✅ Second ensemble, with a visible notice, when <b>either scan result is missing</b><br>
+      ✅ Label direction verified against UCI; the API refuses models that don't declare theirs<br>
+      ✅ Model card, data dictionary, ADRs, checksum-verified models, CI for backend and frontend<br><br>
+      <code>Sensitivity 0.855</code> <code>Specificity 0.713</code> <code>F1 0.779</code> <code>AUC 0.908</code><br>
+      <sub>Cleveland, cross-validated, threshold chosen without the scored fold.</sub><br><br>
+      <table>
+        <tr><th align="left">Outside hospital</th><th>AUC</th><th>Sensitivity</th><th>Specificity</th></tr>
+        <tr><td>Hungary (n=294)</td><td>0.882</td><td>0.840</td><td>0.745</td></tr>
+        <tr><td>VA Long Beach (n=200)</td><td>0.707</td><td>0.812</td><td>0.529</td></tr>
+        <tr><td>Switzerland (n=123)</td><td>0.767</td><td>0.870</td><td>0.375</td></tr>
+      </table>
+      ⚠️ <b>Limits:</b> misses its 0.90 sensitivity target on unseen patients and raises many false alarms at VA and Switzerland (which has only 8 healthy patients). The ensemble does not beat Logistic Regression (AUC 0.914).<br><br>
       🔗 <a href="https://heart-disease-voting-ensemble.vercel.app/">Live demo</a> &nbsp;·&nbsp; <a href="https://github.com/Dungeon-Masterji/heart-disease-voting-ensemble/blob/main/docs/MODEL_CARD.md">Model card</a>
     </td>
   </tr>
